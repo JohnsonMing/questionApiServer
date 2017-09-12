@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import xadmin
 from .models import LegalSecurity, MentalHealthSecurity, TrafficSecurity
 from .models import ActivityStudySecurity, FoodSecurity,  NationalSecurity
@@ -18,7 +17,8 @@ class LegalSecurityAdmin(object):
     def post(self, request, *args, **kwargs):
         if 'excel' in request.FILES:
             pass
-        return super(LegalSecurityAdmin, self).post(request, args, kwargs)
+        return super(LegalSecurityAdmin, self).post(request, args,
+                                                    kwargs)
 
 
 class MentalHealthSecurityAdmin(object):
